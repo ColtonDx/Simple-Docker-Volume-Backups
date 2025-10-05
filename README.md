@@ -45,28 +45,28 @@ You can change this path by editing the `BACKUP_DIRECTORY` variable in the scrip
 
 1. Label your containers with SDVB=StackName in your Docker Compose or run commands.
   Example:
-  ```
-  labels:
-    - SDVB=Netbox
-  ```
+      ```
+      labels:
+        - SDVB=Netbox
+      ```
 2. Place the script on your host system (e.g., /usr/local/bin/docker_stack_backup.sh).
 
 3. Make it executable:
-  ```
-  chmod +x docker_stack_backup.sh
-  ```
+      ```
+      chmod +x docker_stack_backup.sh
+      ```
 
 4. Run the script manually:
   
-  ```
-  ./docker_stack_backup.sh
-  ```
+      ```
+      ./docker_stack_backup.sh
+      ```
 
 4.b (Optional) Automate with cron:
-  ```
-  crontab -e
-  ```
-  ```
-  0 2 * * * /usr/local/bin/docker_stack_backup.sh >> /var/log/docker_backup.log 2>&1
-  ```
+      ```
+      crontab -e
+      ```
+      ```
+      0 2 * * * /usr/local/bin/docker_stack_backup.sh >> /var/log/docker_backup.log 2>&1
+      ```
 5. Bonus: Use Rclone on Script Completion to copy the contents to a backup storage of your choosing
