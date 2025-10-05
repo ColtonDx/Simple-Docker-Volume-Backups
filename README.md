@@ -18,22 +18,22 @@ This script automates backups of Docker stacks by identifying containers labeled
 ## 📦 Backup Format
 
 Each backup file is named:
-```
-<StackName>Backup<YYYY-MM-DD>.tar
-```
+    ```
+    <StackName>Backup<YYYY-MM-DD>.tar
+    ```
 
 Example:
-```
-Netbox_Backup_2025-10-05.tar
-```
+    ```
+    Netbox_Backup_2025-10-05.tar
+    ```
 ---
 
 ## 🗂 Directory Structure
 
 Backups are stored in:
-```
-/mnt/Backups
-```
+    ```
+    /mnt/Backups
+    ```
 
 You can change this path by editing the `BACKUP_DIRECTORY` variable in the script, oterwise you need to ensure /mnt/Backups exists.
 
