@@ -31,8 +31,11 @@ Netbox_Backup_2025-10-05.tar
 ## 🗂 Directory Structure
 
 Backups are stored in:
+```
+/mnt/Backups
+```
 
-You can change this path by editing the `BACKUP_DIRECTORY` variable in the script.
+You can change this path by editing the `BACKUP_DIRECTORY` variable in the script, oterwise you need to ensure /mnt/Backups exists.
 
 ---
 
