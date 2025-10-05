@@ -18,11 +18,13 @@ This script automates backups of Docker stacks by identifying containers labeled
 ## 📦 Backup Format
 
 Each backup file is named:
+
     ```
     <StackName>Backup<YYYY-MM-DD>.tar
     ```
 
 Example:
+
     ```
     Netbox_Backup_2025-10-05.tar
     ```
