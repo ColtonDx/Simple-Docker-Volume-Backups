@@ -42,30 +42,30 @@ You can change this path by editing the `BACKUP_DIRECTORY` variable in the scrip
 ## 🚀 How to Use
 
 🚀 How to Use
-Label your containers with SDVB=<StackName> in your Docker Compose or run commands.
 
-Example:
-```
-labels:
-  - SDVB=Netbox
-```
-Place the script on your host system (e.g., /usr/local/bin/docker_stack_backup.sh).
+1. Label your containers with SDVB=StackName in your Docker Compose or run commands.
+  Example:
+  ```
+  labels:
+    - SDVB=Netbox
+  ```
+2. Place the script on your host system (e.g., /usr/local/bin/docker_stack_backup.sh).
 
-Make it executable:
-```
-chmod +x docker_stack_backup.sh
-```
+3. Make it executable:
+  ```
+  chmod +x docker_stack_backup.sh
+  ```
 
-Run the script manually:
+4. Run the script manually:
+  
+  ```
+  ./docker_stack_backup.sh
+  ```
 
-```
-./docker_stack_backup.sh
-```
-
-(Optional) Automate with cron:
-```
-crontab -e
-```
-```
-0 2 * * * /usr/local/bin/docker_stack_backup.sh >> /var/log/docker_backup.log 2>&1
-```
+4.b (Optional) Automate with cron:
+  ```
+  crontab -e
+  ```
+  ```
+  0 2 * * * /usr/local/bin/docker_stack_backup.sh >> /var/log/docker_backup.log 2>&1
+  ```
