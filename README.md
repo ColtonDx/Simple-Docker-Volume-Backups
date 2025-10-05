@@ -69,3 +69,4 @@ You can change this path by editing the `BACKUP_DIRECTORY` variable in the scrip
   ```
   0 2 * * * /usr/local/bin/docker_stack_backup.sh >> /var/log/docker_backup.log 2>&1
   ```
+5. Bonus: Use Rclone on Script Completion to copy the contents to a backup storage of your choosing
